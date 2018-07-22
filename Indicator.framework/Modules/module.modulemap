@@ -1,0 +1,4 @@
+framework module Indicator {
+    header "Indicator-Swift.h"
+    requires objc
+}
