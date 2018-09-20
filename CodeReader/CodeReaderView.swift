@@ -2,9 +2,6 @@
 //  CodeReaderView.swift
 //  CodeReader
 //
-//  Created by Evgene Podkorytov on 19.07.2018.
-//  Copyright © 2018 Podkorytov iEvgen. All rights reserved.
-//
 
 import UIKit
 import AVKit
@@ -84,9 +81,9 @@ final public class CodeReaderView: UIView, CodeReaderDisplayable {
         let view = UIStackView()
             view.backgroundColor                           = .clear
             view.translatesAutoresizingMaskIntoConstraints = false
-            view.axis  = UILayoutConstraintAxis.vertical
-            view.distribution  = UIStackViewDistribution.equalSpacing
-            view.alignment = UIStackViewAlignment.top
+            view.axis  = NSLayoutConstraint.Axis.vertical
+            view.distribution  = UIStackView.Distribution.equalSpacing
+            view.alignment = UIStackView.Alignment.top
         return view
     }()
     private var toolHieght: NSLayoutConstraint
@@ -260,9 +257,9 @@ final public class CodeReaderView: UIView, CodeReaderDisplayable {
         let titleParagraph = NSMutableParagraphStyle()
             titleParagraph.alignment = .center
         
-        var attrs = [NSAttributedStringKey.font : titleFont,
-                     NSAttributedStringKey.foregroundColor : textColor,
-                     NSAttributedStringKey.paragraphStyle: titleParagraph] as [NSAttributedStringKey : Any]
+        var attrs = [NSAttributedString.Key.font : titleFont,
+                     NSAttributedString.Key.foregroundColor : textColor,
+                     NSAttributedString.Key.paragraphStyle: titleParagraph] as [NSAttributedString.Key : Any]
         
         let result = NSMutableAttributedString(string: title.uppercased(), attributes: attrs)
         //
@@ -271,9 +268,9 @@ final public class CodeReaderView: UIView, CodeReaderDisplayable {
             textParagraph.alignment = .center
             textParagraph.paragraphSpacingBefore = 14
             
-            attrs = [NSAttributedStringKey.font : messageFont,
-                     NSAttributedStringKey.foregroundColor : textColor,
-                     NSAttributedStringKey.paragraphStyle: textParagraph] as [NSAttributedStringKey : Any]
+            attrs = [NSAttributedString.Key.font : messageFont,
+                     NSAttributedString.Key.foregroundColor : textColor,
+                     NSAttributedString.Key.paragraphStyle: textParagraph] as [NSAttributedString.Key : Any]
             
             let attributedString = NSMutableAttributedString(string: "\n\(message)", attributes:attrs)
             
@@ -423,7 +420,7 @@ final public class CodeReaderView: UIView, CodeReaderDisplayable {
     // MARK: - Convenience Methods
     
     private func addComponents() {
-        NotificationCenter.default.addObserver(self, selector: #selector(self.setNeedsUpdateOrientation), name: .UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.setNeedsUpdateOrientation), name: UIDevice.orientationDidChangeNotification, object: nil)
         
         addSubview(cameraView)
         

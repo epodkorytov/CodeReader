@@ -2,9 +2,7 @@
 //  CodeReaderVCBuilder.swift
 //  CodeReader
 //
-//  Created by Evgene Podkorytov on 19.07.2018.
-//  Copyright © 2018 Podkorytov iEvgen. All rights reserved.
-//
+
 
 import Foundation
 import UIKit

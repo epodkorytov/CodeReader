@@ -12,23 +12,19 @@
 		3B3FF80520FE1D28006B1FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FF80320FE1D28006B1FA3 /* Main.storyboard */; };
 		3B3FF80720FE1D2A006B1FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FF80620FE1D2A006B1FA3 /* Assets.xcassets */; };
 		3B3FF80A20FE1D2A006B1FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FF80820FE1D2A006B1FA3 /* LaunchScreen.storyboard */; };
-		3B3FF80F20FE1D35006B1FA3 /* CodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3FF7EE20FE1CD5006B1FA3 /* CodeReader.framework */; };
 		3B3FF81020FE1D35006B1FA3 /* CodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3FF7EE20FE1CD5006B1FA3 /* CodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B3FF81520FE1F1F006B1FA3 /* CodeReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FF81420FE1F1F006B1FA3 /* CodeReaderOverlayView.swift */; };
 		3B3FF81720FE8066006B1FA3 /* CodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FF81620FE8066006B1FA3 /* CodeReader.swift */; };
 		3BBAB08420FFEFEE00F4DF8D /* CodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAB08320FFEFEE00F4DF8D /* CodeReaderView.swift */; };
 		3BBAB0862100467B00F4DF8D /* CodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAB0852100467B00F4DF8D /* CodeReaderViewController.swift */; };
 		3BBAB0882100479000F4DF8D /* CodeReaderVCBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBAB0872100479000F4DF8D /* CodeReaderVCBuilder.swift */; };
+		3BF393CB2153898500F20219 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090E21033CCA00F25924 /* Extensions.framework */; };
+		3BF393CC2153898500F20219 /* ImageExtended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090F21033CCA00F25924 /* ImageExtended.framework */; };
+		3BF393CD2153898500F20219 /* Indicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA091021033CCA00F25924 /* Indicator.framework */; };
 		3BFA08F8210276B500F25924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA08F7210276B500F25924 /* Assets.xcassets */; };
 		3BFA091121033CCA00F25924 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090E21033CCA00F25924 /* Extensions.framework */; };
 		3BFA091221033CCA00F25924 /* ImageExtended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090F21033CCA00F25924 /* ImageExtended.framework */; };
 		3BFA091321033CCA00F25924 /* Indicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA091021033CCA00F25924 /* Indicator.framework */; };
-		3BFA0914210340A600F25924 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090E21033CCA00F25924 /* Extensions.framework */; };
-		3BFA0915210340A600F25924 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090E21033CCA00F25924 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3BFA0916210340A600F25924 /* ImageExtended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090F21033CCA00F25924 /* ImageExtended.framework */; };
-		3BFA0917210340A600F25924 /* ImageExtended.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA090F21033CCA00F25924 /* ImageExtended.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3BFA0918210340A600F25924 /* Indicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA091021033CCA00F25924 /* Indicator.framework */; };
-		3BFA0919210340A600F25924 /* Indicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFA091021033CCA00F25924 /* Indicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BFA091B2103B8B900F25924 /* CodeReaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA091A2103B8B900F25924 /* CodeReaderStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,10 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3BFA0919210340A600F25924 /* Indicator.framework in Embed Frameworks */,
-				3BFA0915210340A600F25924 /* Extensions.framework in Embed Frameworks */,
 				3B3FF81020FE1D35006B1FA3 /* CodeReader.framework in Embed Frameworks */,
-				3BFA0917210340A600F25924 /* ImageExtended.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,10 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFA0918210340A600F25924 /* Indicator.framework in Frameworks */,
-				3BFA0914210340A600F25924 /* Extensions.framework in Frameworks */,
-				3B3FF80F20FE1D35006B1FA3 /* CodeReader.framework in Frameworks */,
-				3BFA0916210340A600F25924 /* ImageExtended.framework in Frameworks */,
+				3BF393CB2153898500F20219 /* Extensions.framework in Frameworks */,
+				3BF393CC2153898500F20219 /* ImageExtended.framework in Frameworks */,
+				3BF393CD2153898500F20219 /* Indicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,16 +157,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		3B3FF7EB20FE1CD5006B1FA3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		3B3FF7ED20FE1CD5006B1FA3 /* CodeReader */ = {
 			isa = PBXNativeTarget;
@@ -182,7 +164,6 @@
 			buildPhases = (
 				3B3FF7E920FE1CD5006B1FA3 /* Sources */,
 				3B3FF7EA20FE1CD5006B1FA3 /* Frameworks */,
-				3B3FF7EB20FE1CD5006B1FA3 /* Headers */,
 				3B3FF7EC20FE1CD5006B1FA3 /* Resources */,
 			);
 			buildRules = (
@@ -220,15 +201,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Podkorytov iEvgen";
 				TargetAttributes = {
 					3B3FF7ED20FE1CD5006B1FA3 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 					};
 					3B3FF7FC20FE1D28006B1FA3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -449,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -467,11 +449,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TicketForEvent.CodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.CodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -498,10 +480,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TicketForEvent.CodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.CodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -523,9 +505,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TicketForEvent.example;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.CodeReader.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -547,9 +529,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TicketForEvent.example;
+				PRODUCT_BUNDLE_IDENTIFIER = Framework.CodeReader.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

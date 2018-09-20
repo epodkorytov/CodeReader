@@ -2,9 +2,6 @@
 //  CodeReader.swift
 //  CodeReader
 //
-//  Created by Evgene Podkorytov on 17.07.2018.
-//  Copyright © 2018 Podkorytov iEvgen. All rights reserved.
-//
 
 import UIKit
 import AVFoundation

@@ -2,9 +2,7 @@
 //  CodeReaderViewController.swift
 //  CodeReader
 //
-//  Created by Evgene Podkorytov on 19.07.2018.
-//  Copyright © 2018 Podkorytov iEvgen. All rights reserved.
-//
+
 
 import UIKit
 import AVFoundation
@@ -134,7 +132,7 @@ open class CodeReaderVC: UIViewController {
         
         // Setup constraints
         
-        for attribute in [.left, .top, .right] as [NSLayoutAttribute] {
+        for attribute in [.left, .top, .right] as [NSLayoutConstraint.Attribute] {
             NSLayoutConstraint(item: readerView.view, attribute: attribute, relatedBy: .equal, toItem: view, attribute: attribute, multiplier: 1, constant: 0).isActive = true
         }
 

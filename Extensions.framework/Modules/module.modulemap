@@ -1,4 +1,0 @@
-framework module Extensions {
-    header "Extensions-Swift.h"
-    requires objc
-}
